@@ -1,0 +1,57 @@
+@import "../scss/bootstrap/bootstrap.scss";
+
+body {
+    margin-top: 10%;
+}
+
+a:link {
+    text-decoration: transparent;
+    color: black;
+}
+
+a:visited {
+    text-decoration: transparent;
+    color: black;
+}
+
+a:hover {
+    color: #05bb05;
+}
+
+.col-2 {
+    font-weight: 700
+}
+
+.space-top {
+    padding-top: 2px;
+}
+
+.space-row {
+    padding-top: $grid-gutter-width;
+}
+
+span {
+    color: #05bb05;
+}
+
+.more-industries > a {
+    background-color: #05bb05;
+    color: #fff;
+
+    &:hover {
+        @extend .more-industries;
+    }
+}
+
+h1 {
+    font-size: 60px;
+    padding-bottom: 60px;
+}
+
+li {
+    display: inline;
+    border: 1px solid transparent;
+    margin-right: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}

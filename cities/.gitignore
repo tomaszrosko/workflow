@@ -1,0 +1,8 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+.idea/
+/style
+style.css
+style.css.map

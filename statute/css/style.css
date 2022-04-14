@@ -1,0 +1,11 @@
+.one ol {
+    list-style-type: upper-roman;
+}
+
+.two ol {
+    list-style-type: decimal;
+}
+
+.three ol {
+    list-style-type: lower-alpha;
+}

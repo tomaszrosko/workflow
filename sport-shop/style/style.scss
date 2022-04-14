@@ -1,0 +1,45 @@
+@import "../scss/bootstrap.scss";
+
+
+.spec .col-3 {
+  border-right: 1px solid silver;
+  margin-bottom: $grid-gutter-width;
+  position: relative;
+  padding-right: $grid-gutter-width /2;
+  padding-left: $grid-gutter-width /2;
+}
+
+img {
+  max-height: 50%;
+  max-width: 90%;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-top: 1px solid silver;
+  padding-bottom: $grid-gutter-width /4;
+  padding-right: $grid-gutter-width /2;
+}
+
+li > a {
+  padding-left: 10px;
+  text-decoration: none;
+  color: black;
+
+}
+
+img {
+  filter: grayscale(99%);
+}
+
+img:hover {
+  filter: none;
+}

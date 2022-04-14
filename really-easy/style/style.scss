@@ -1,0 +1,67 @@
+@import "../scss/bootstrap.scss";
+
+body {
+  counter-reset: article_id; /* Ustawienie licznika sekcja na 0 */
+  background-color: #9be8c4;
+}
+
+.row {
+  padding-top:2rem;
+}
+.col {
+  position: relative;
+}
+
+.row .col:before {
+  counter-increment: article_id;
+  content: counter(article_id);
+  border: 1px solid green;
+  background: white;
+  border-radius: 50%;
+  display: block;
+  width: 2rem;
+  top: -1rem;
+  left: 3rem;
+  height: 2rem;
+  text-align: center;
+  z-index: 10;
+  position: absolute;
+}
+
+.col:nth-child(2n+1){
+  margin-top: 2rem;
+}
+
+
+.col:nth-child(2n+1):after{
+  content: "";
+  border-top: 1px solid green;
+  width: 5rem;
+  height:5rem;
+  position:absolute;
+  right: -1rem;
+  top: 2rem;
+  transform: rotate(45deg);
+  z-index: -10;
+}
+
+.col:nth-last-child(1):after {
+  border-top: none;
+}
+
+.col:nth-child(2n):after{
+  content: "";
+  border-top: 1px solid green;
+  width: 10rem;
+  height:5rem;
+  position:absolute;
+  left:-2rem;
+  bottom: -4rem;
+  transform: rotate(-50deg);
+  z-index: -110;
+}
+
+
+.col div {
+  background: white;
+}

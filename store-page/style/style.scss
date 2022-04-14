@@ -1,0 +1,104 @@
+@import "../scss/bootstrap.scss";
+
+body {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.col {
+  margin-bottom: $grid-gutter-width/2;
+  position: relative;
+  padding-right: $grid-gutter-width/2;
+  padding-left: $grid-gutter-width/2;
+  margin-top: $grid-gutter-width/2;
+}
+
+ul.pagination li a {
+  color: black;
+  float: left;
+  padding: 2px 4px;
+  text-decoration: none;
+}
+
+.next:link {
+  text-decoration: none;
+}
+
+.prev:link {
+  text-decoration: none;
+}
+
+a {
+  color: black;
+}
+
+.colLast {
+  margin-top: $grid-gutter-width*2;
+  position: relative;
+}
+
+.colLast:before {
+  margin-top: -$grid-gutter-width/2;
+  border-top: 1px solid silver;
+  content: "";
+  height: 1px;
+  position: absolute;
+  left: $grid-gutter-width/2;
+  right: $grid-gutter-width/2;
+}
+
+.navBottom {
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
+}
+
+.navUpper {
+  align-items: center;
+}
+
+.navRightUpper {
+  align-items: center;
+}
+
+.sorting {
+}
+
+#dropdownMenuButton1 {
+  align-items: center;
+}
+
+.sorting {
+  padding-right: 50px;
+}
+
+.one {
+  padding: 2px;
+
+}
+
+.two {
+  padding: 2px;
+}
+
+.priceCut {
+  position: absolute;
+  width: 100%;
+  padding: $grid-gutter-width;
+  text-align: right;
+  font-size: 20px;
+  color: blue;
+  text-decoration: underline;
+
+}
+
+.oldPrice {
+  padding-left: 10px;
+  padding-right: $grid-gutter-width;
+  text-decoration: line-through;
+}
+
+.newPrice {
+  color: green;
+}
+
+

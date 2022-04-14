@@ -1,0 +1,7 @@
+tbody > tr:nth-child(3n+1) {
+    background-color: green;
+}
+
+tbody > tr:nth-child(2n+3) {
+    background-color: pink;
+}
